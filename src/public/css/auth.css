@@ -1,0 +1,137 @@
+/* 新規登録、ログイン等認証画面 */
+.section_title_responsive {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+
+.text_center {
+  text-align: center;
+  margin: 0 auto;
+}
+.text_auth {
+  color: #ffffff;
+}
+.common_btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.common_btn:hover {
+  filter: invert();
+}
+
+.text_error {
+  color: #eafb02;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label_block {
+  display:block;
+  margin-bottom: 0.8rem;
+}
+
+.name {
+  padding-right: 15rem;
+}
+.address {
+  padding-right: 13.5rem;
+}
+.password {
+  padding-right: 15.5rem;
+}
+.new_password {
+  padding-right: 12.5rem;
+}
+.confirm_password {
+  padding-right: 11.5rem;
+}
+
+.input_block {
+    display:block;
+    margin-bottom: -0.5rem;
+    width: 20rem;
+    height: 1.5rem;
+}
+
+.alert_success {
+  color:#03f928;
+  margin-bottom: 1rem;
+}
+
+/* マイページ */  
+.mypage {
+  display: block;
+  width: 45rem;
+  margin: 0 auto;
+}
+
+.mypage_section {
+  padding: 0.5rem 0;
+}
+
+.mypage_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mypage_inner {
+  display: flex;
+  align-items: center;
+}
+
+.mypage_img_block {
+  margin: 0 1rem;
+}
+
+.mypage_img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.mypage_label_block {
+  margin: 0 1rem;
+}
+
+.mypage_content_block label{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+}
+.mypage_content_block p{
+  color: #9b9595;
+}
+
+.mypage_allow_block {
+  /* 上下中央に配置するために、親要素のheightに合わせてline-heightをとる */
+  line-height: 6.25rem;
+}
+.mypage_allow_block:hover {
+  opacity: 0.8;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+
+  .section_title_responsive {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+  }
+
+}

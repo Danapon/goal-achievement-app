@@ -1,0 +1,289 @@
+/* バリデーション */
+.validation {
+  color: #eafb02;
+}
+
+/*****  目標表示画面 *****/
+/* ユーザー名 */
+.user_name {
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+/* アバターセクション */
+.get_exp_message {
+  font-size: 1.5rem;
+  color: aquamarine;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.achive_message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(2, 248, 31);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avator {
+  text-align: center;
+}
+
+.avator_image {
+  width: 300px;
+  height: 300px;
+}
+
+.level {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+#splash_text {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  height: 1rem;
+  border: 1px solid #ffffff;
+}
+
+.next_level {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.achive {
+	background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -webkit-linear-gradient(left, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -o-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -moz-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* 目標セクション */
+.goal {
+  margin-top: 4rem!important;
+  margin-left: 3rem!important;
+  margin-right: 3rem!important;
+  background-color: #000000!important;
+}
+
+.section_titile {
+  font-size: 3rem!important;
+  background-color: #000000!important;
+}
+
+.goal_title {
+  font-size: 2.5rem;
+}
+
+.goal_btn {
+  font-size: 2.5rem!important;
+  margin-top: 2rem!important;
+}
+
+/* goalsテーブルに該当ユーザーのレコードがない場合(初回登録時) */
+.first {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.first_goal {
+  width: 15rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  color: #eef6b5;
+}
+
+.goal_message {
+  background-color: #000000!important;
+}
+
+/* サブ目標セクション */
+.subgoal {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.subgoal_block {
+  width: calc(90% / 3);
+  height: 23rem;
+  background-color: #000000!important;
+  position: relative;
+  display: inline;
+}
+
+.subgoal_title {
+  font-size: 1.5rem;
+}
+
+.subgoal_btn {
+  position: absolute;
+  top: 18rem;
+  left:50%;
+  margin-left:-30px;
+}
+
+.difficulty_star {
+  color: #f8e802;
+} 
+
+/*****  目標＆サブ目標設定画面 *****/
+.section_title_subgoal {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+
+.set_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.set_title {
+  display: block;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.label_title {
+  display:block;
+  color: #ffffff;
+  font-size: 1.5rem; 
+  margin-bottom: -1rem!important;
+}
+
+.required_title {
+  color: #fb0202;
+}
+
+.input_title {
+  margin-bottom: 1rem;
+  width: 30rem;
+  height: 1.5rem;
+}
+
+.label_detail {
+  display:block;
+  color: #ffffff;
+  font-size: 1.3rem; 
+}
+
+.input_detail {
+  margin-bottom: 1rem;
+  width: 30rem; 
+}
+
+.next_btn {
+  display: block;
+  font-size: 1.5rem!important;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.completed_btn {
+  display: block;
+  font-size: 1.5rem!important;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: -1.5rem;
+}
+
+.label_select {
+  display:block;
+  color: #ffffff;
+  font-size: 1.5rem; 
+  margin-bottom: 1rem!important; 
+}
+
+.input_select {
+  margin-bottom: 1rem!important; 
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+
+  /*****  目標表示画面 *****/
+  /* レベルアップゲージ */
+  #splash_text {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 0.65rem;
+    border: 1px solid #ffffff;
+  }
+
+  /* サブ目標セクション */
+  .subgoal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .subgoal_block {
+    width: 100%;
+    height: 18rem;
+    background-color: #000000!important;
+    position: relative;
+    display: inline;
+    margin-bottom: 1rem!important;
+  }
+
+  .difficulty_status {
+    font-size: 0.75rem;
+  }
+
+  .subgoal_btn {
+    position: absolute;
+    top: 13rem;
+    left:50%;
+    margin-left:-30px;
+  }
+
+  /* 目標達成ボタン */
+  .goal_btn {
+    font-size: 1.5rem!important;
+    margin-top: 2rem!important;
+  }
+
+  /*****  目標＆サブ目標設定画面 *****/
+  .section_title_subgoal {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+  }
+  
+  .set_title {
+    display: block;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+
+}
