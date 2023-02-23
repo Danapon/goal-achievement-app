@@ -43,12 +43,12 @@ class GoalService
       $level = $this->level_master->getLevelMaster($total_exp);
 
       /* レベルアップゲージに表示させる値を計算して取得する処理②-2 */
-      $exp_array = $this->level_service->getExpArray($level, $total_exp);
+      $exp_content = $this->level_service->getExp($level, $total_exp);
 
       /* 目標テーブルのレコードを取得する処理 */
       $goal = $user->goals->sortByDesc('id')->first();
 
-      return  new GoalIndexViewContent($goal, $total_exp, $level, $exp_array);
+      return  new GoalIndexViewContent($goal, $total_exp, $level, $exp_content);
  
     }
 

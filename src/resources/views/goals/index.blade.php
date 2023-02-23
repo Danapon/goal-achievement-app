@@ -8,8 +8,8 @@
      <script src="{{ asset('/js/progressbar/progressbar.js') }}"></script>
      <script>
       //LaravelのBladeで使っている変数$current_exp,$next_expをJavascriptの変数で定義する
-      const current_exp = @json($goal_index_view_content->getExpArray()['current_exp']);
-      const next_exp = @json($goal_index_view_content->getExpArray()['next_exp']);
+      const current_exp = @json($goal_index_view_content->getExpContent()->current_exp);
+      const next_exp = @json($goal_index_view_content->getExpContent()->next_exp);
      </script>
      <script src="{{ asset('/js/script.js') }}"></script>
 @endpush
@@ -40,8 +40,10 @@
   <!-- レベルアップゲージ、達成ボタンが押されたタイミングでjsで動かす(valueの値を操作する) -->
   <div id="splash_text" ></div>
 
-  @if ($goal_index_view_content->getExpArray()['next_exp'])
-  <p class="next_level">次のレベルまであと {{ $goal_index_view_content->getExpArray()['next_exp'] }} 必要です</p>
+  {{-- @if ($goal_index_view_content->getExpArray()['next_exp']) --}}
+  {{-- <p class="next_level">次のレベルまであと {{ $goal_index_view_content->getExpArray()['next_exp'] }} 必要です</p> --}}
+  @if ($goal_index_view_content->getExpContent()->next_exp)
+  <p class="next_level">次のレベルまであと {{ $goal_index_view_content->getExpContent()->next_exp }} 必要です</p>  
   @else
   <p class="next_level achive">おめでとうございます！<br>レベルがMAXになりました！</p>
   @endif
