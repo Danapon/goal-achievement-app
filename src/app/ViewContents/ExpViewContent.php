@@ -7,9 +7,9 @@ class ExpViewContent
 {
 
   public function __construct (
-    public int $required_exp_max,
-    public float $current_exp,
-    public int $next_exp)
+    private int $required_exp_max,
+    private float $current_exp,
+    private int $next_exp)
   {
     $this->required_exp_max = $required_exp_max;
     $this->current_exp = $current_exp;
