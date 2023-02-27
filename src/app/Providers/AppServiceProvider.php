@@ -27,6 +27,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        /* SSL対応 */
+        // if (config('app.env') === 'production') {
+        //     URL::forceScheme('https');
+        // }
+
         /* header.blade.phpで$goal_statusを使用するための共通処理 */
         $goal_status = GoalConsts::GOAL_STATUS_TODO; // 0:未達成
         view()->share('goal_status', $goal_status);

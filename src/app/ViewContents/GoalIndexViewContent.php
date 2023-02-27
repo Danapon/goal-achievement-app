@@ -12,7 +12,7 @@ class GoalIndexViewContent
 {
 
   public function __construct (
-    private Goal $goal,
+    private $goal = null,
     private int $goal_status,
     private LevelMaster $level,
     private ExpViewContent $exp_content)

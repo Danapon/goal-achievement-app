@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('scripts')
-     <script src="{{ asset('/js/script.js') }}"></script>
+      <script src="{{ asset('/js/script.js') }}"></script>
 @endpush
 
 @section('title', '目標達成アプリ')

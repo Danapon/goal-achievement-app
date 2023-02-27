@@ -5,13 +5,13 @@
 @endpush
 
 @push('scripts')
-     <script src="{{ asset('/js/progressbar/progressbar.js') }}"></script>
-     <script>
-      //LaravelのBladeで使っている変数$current_exp,$next_expをJavascriptの変数で定義する
-      const current_exp = @json($goal_index_view_content->getExpContent()->getCurrentExp());
-      const next_exp = @json($goal_index_view_content->getExpContent()->getNextExp());
-     </script>
-     <script src="{{ asset('/js/script.js') }}"></script>
+      <script src="{{ asset('/js/progressbar/progressbar.js') }}"></script>
+      <script>
+        //LaravelのBladeで使っている変数$current_exp,$next_expをJavascriptの変数で定義する
+        const current_exp = @json($goal_index_view_content->getExpContent()->getCurrentExp());
+        const next_exp = @json($goal_index_view_content->getExpContent()->getNextExp());
+      </script>
+      <script src="{{ asset('/js/script.js') }}"></script>    
 @endpush
 
 @section('title', '目標表示')
