@@ -257,11 +257,13 @@ body {
     border-bottom: 5px solid #ffffff;
     text-align: center;
     margin: 0 auto;
+    justify-content: space-around;
   }
 
-  /* .nav_left {
+  .nav_left {
+    display: flex;
     max-width: 100%;
-  } */
+  }
 
   .nav_header {
     color: white;
@@ -292,10 +294,9 @@ body {
   /***** ハンバーガーメニュー *****/
   #menu_sp {
     display: block;
-    float: right;
     padding: 0;
     filter: invert();
-    margin-left: 0.5rem;
+    margin: 0 0 0 auto;
     cursor: pointer;
   }
   /* スマホ用ナビゲーションの表示切替 */
@@ -352,9 +353,10 @@ body {
     font-weight: bold;
     border: #ffffff 1px solid;
     transition: all  0.3s ease;
+    background-color: #0068b7;
   }
   #nav_sp > .menu:hover {
-    background-color: #0068b7;
+    filter: invert();
   }
   .sns {
     position: absolute;
