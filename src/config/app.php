@@ -27,8 +27,8 @@ return [
     | services the application utilizes. Set this in your ".env" file.
     |
     */
-
-    'env' => env('APP_ENV', 'production'),
+    // 開発環境ではlocal、本番環境ではproductionとする
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------

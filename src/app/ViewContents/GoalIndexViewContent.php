@@ -6,25 +6,21 @@ namespace App\ViewContents;
 use App\Consts\GoalConsts;
 use App\Models\Goal;
 use App\Models\LevelMaster;
+use App\ViewContents\ExpViewContent;
 
 class GoalIndexViewContent
 {
 
-  private $goal;
-  private $goal_status;
-  private $level;
-  private $exp_array;
-
   public function __construct (
-    Goal $goal = null,
-    int $goal_status,
-    LevelMaster $level,
-    array $exp_array)
+    private $goal = null,
+    private int $goal_status,
+    private LevelMaster $level,
+    private ExpViewContent $exp_content)
   {
     $this->goal = $goal;
     $this->goal_status = $goal_status;
     $this->level = $level;
-    $this->exp_array = $exp_array;
+    $this->exp_content = $exp_content;
   }
 
   public function getGoals ()
@@ -44,9 +40,9 @@ class GoalIndexViewContent
   {
     return $this->level;
   }
-  public function getExpArray ()
+  public function getExpContent ()
   {
-    return $this->exp_array;
+    return $this->exp_content;
   }
 
   // Viewに目標を表示させる判定処理

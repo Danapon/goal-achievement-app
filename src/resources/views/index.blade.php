@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('scripts')
-     <script src="{{ asset('/js/script.js') }}"></script>
+      <script src="{{ asset('/js/script.js') }}"></script>
 @endpush
 
 @section('title', '目標達成アプリ')
@@ -20,6 +20,14 @@
       <div class="entry">
         <a class="nes-btn entry_btn" href="{{ route('register') }}"><p class="entry_register">はじめから</p></a><br>
         <a class="nes-btn entry_btn" href="{{ route('login') }}"><p class="entry_login">つづきから</p></a>
+      </div>
+
+      <hr size="3px" width="200px">
+
+      <div class="entry_google">
+        <a href="{{ url('auth/google') }}" class="entry_google_btn">
+          <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+        </a>
       </div>
 
       <div class="description">

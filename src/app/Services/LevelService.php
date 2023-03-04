@@ -4,11 +4,12 @@ declare(strict_types=1);
 namespace App\Services;
 
 use App\Models\LevelMaster;
+use App\ViewContents\ExpViewContent;
 
 class LevelService
 {
    /* レベルアップゲージに表示させる値を計算して取得する処理②-2 */
-   public function getExpArray(LevelMaster $level_master, int $total_exp):array
+   public function getExp(LevelMaster $level_master, int $total_exp):ExpViewContent
    {
      // レベルアップに必要な経験値を取得する(次のrequired_exp - 現在のrequired_exp)
      // レベルがMAXでなければゲージに必要な値を取得
@@ -31,16 +32,11 @@ class LevelService
      else {
          // レベルMAXのときレベルアップゲージをMAXにする
          $current_exp = 1;
-         // compact関数でエラーが出ないように変数にnullを入れておく
-         $required_exp_max = null;
-         $next_exp = null;
+         $required_exp_max = 0;
+         $next_exp = 0;
      }
-     // 配列に格納
-     $exp_array = array(
-      'required_exp_max' => $required_exp_max,
-      'current_exp' => $current_exp,
-      'next_exp' => $next_exp
-     );
-     return $exp_array;
+
+    return new ExpViewContent($required_exp_max, $current_exp, $next_exp);
+
    }
 }
