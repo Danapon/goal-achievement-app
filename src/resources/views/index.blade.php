@@ -22,6 +22,14 @@
         <a class="nes-btn entry_btn" href="{{ route('login') }}"><p class="entry_login">つづきから</p></a>
       </div>
 
+      <hr size="3px" width="200px">
+
+      <div class="entry_google">
+        <a href="{{ url('auth/google') }}" class="entry_google_btn">
+          <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+        </a>
+      </div>
+
       <div class="description">
         <div class="nes-container is-rounded is-dark with-title description_block sa sa--lr" data-sa_delay="50">
           <p class="title description_title">&#9312;目標を立てて</p>

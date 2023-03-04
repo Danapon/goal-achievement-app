@@ -136,7 +136,6 @@ body {
 .entry_btn {
   filter: invert();
   margin-bottom: 1.5rem;
-  
 }
 
 .entry_register {
@@ -147,6 +146,17 @@ body {
 .entry_login {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.entry_google {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.entry_google_btn:hover {
+  filter: invert();
+  /* color: #585555; */
 }
 
 /* アプリ説明 */

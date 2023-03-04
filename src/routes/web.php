@@ -5,6 +5,7 @@ use App\Http\Controllers\GoalController;
 use App\Http\Controllers\SubGoalController;
 use App\Http\Controllers\UserController;// マイページ作成で追加
 use Illuminate\Foundation\Auth\EmailVerificationRequest;// メール認証で追加
+use App\Http\Controllers\LoginWithGoogleController;// Google認証で追加
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,17 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;// メール認証で追
 Route::get('/', function () {
     return view('index');
 });
+
+// Google認証
+Route::get("auth/google", [
+    LoginWithGoogleController::class,
+    "redirectToGoogle",
+  ]);
+  
+Route::get("auth/google/callback", [
+LoginWithGoogleController::class,
+"handleGoogleCallback",
+]);
 
 // メール認証
 Route::get('/email/verify', function () {
