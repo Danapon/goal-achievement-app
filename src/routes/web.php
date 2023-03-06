@@ -21,7 +21,7 @@ use App\Http\Controllers\LoginWithGoogleController;// Google認証で追加
 // 最初の画面に遷移
 Route::get('/', function () {
     return view('index');
-});
+})->name('home.index');
 
 // Google認証
 Route::get("auth/google", [
@@ -62,7 +62,6 @@ Route::controller(SubGoalController::class)->group(function () {
 Route::controller(UserController::class)->group(function () {
     Route::get('users/mypage', 'mypage')->name('mypage');
     Route::get('users/mypage/edit', 'edit')->name('mypage.edit');
-    // Route::put('users/mypage', 'update')->name('mypage.update');
     Route::get('users/mypage/password/edit', 'edit_password')->name('mypage.edit_password');
-    // Route::put('users/mypage/password', 'update_password')->name('mypage.update_password');
+    Route::delete('users/mypage/{user}', 'destroy')->name('mypage.destroy');
 });

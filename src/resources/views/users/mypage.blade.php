@@ -86,6 +86,12 @@
  
          <hr>
 
+         <form action="{{ route('mypage.destroy', Auth::user()) }}" method="post" style="text-align: center;">
+            @csrf
+            @method('delete')                                        
+            <button type="submit" class="common_btn" >退会する</button>
+        </form>
+
  </div>
 
 @endsection
