@@ -4,6 +4,10 @@
      <link href="{{ asset('/css/auth.css') }}" rel="stylesheet" />
 @endpush
 
+@push('scripts')
+    <script src="{{ asset('/js/script.js') }}"></script>
+@endpush
+
 @section('title', 'マイページ')
 
 @section('section_title', 'マイページ')
@@ -89,7 +93,7 @@
          <form action="{{ route('mypage.destroy', Auth::user()) }}" method="post" style="text-align: center;">
             @csrf
             @method('delete')                                        
-            <button type="submit" class="common_btn" >退会する</button>
+            <input type="submit" name="delete"  class="common_btn" value="退会する" onClick="delete_alert(event);return false;">
         </form>
 
  </div>

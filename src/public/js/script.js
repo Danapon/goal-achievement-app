@@ -46,3 +46,13 @@ bar.animate(current_exp, function () {//バーを描画する割合を指定し�
   $(".loader_cover-up").addClass("coveranime");//カバーが上に上がるクラス追加
   $(".loader_cover-down").addClass("coveranime");//カバーが下に下がるクラス追加
 });
+
+/***** マイページ *****/
+// 退会確認アラート
+function delete_alert(e){
+  if(!window.confirm('本当に退会しますか？')){
+     window.alert('キャンセルされました'); 
+     return false;
+  }
+  document.deleteform.submit();
+};
